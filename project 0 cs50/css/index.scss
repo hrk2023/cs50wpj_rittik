@@ -1,0 +1,87 @@
+$back_color:linear-gradient(#3A1C71,#D76D77,#FFAF7B);
+.body{
+    width:100%;
+    margin:0px;
+    padding: 0px;
+}
+.navbar{
+    margin: 0px;
+}
+.ul_decor{
+    list-style-type:none;
+}
+.li_decor{
+    padding-right:15px;
+}
+.content{
+    min-width:600px;
+    margin: 0px;
+}
+.banner{
+    background-image: url(../images/intro-bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    margin-bottom:25px;
+    text-align: center;
+}
+.inner-message {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin:auto;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+.thumbnail{
+    margin:auto;
+}
+#heading{
+    font-size: 36px;
+    color:white;
+    margin:0px;
+}
+#cap{
+    font-size: 14px;
+    color:white;
+    margin-bottom:25px;
+}
+.caption{
+    text-align: center;
+}
+.footer_dec{
+    background: black;
+    min-height:50px;
+    color:white;
+}
+.foot-align{
+    width:50%;
+    margin:auto;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration: none;
+    color:rgba(235, 207, 155, 0.575);
+}
+/* MEDIA QUERIES */
+@media(min-width:992px){
+    .banner{
+        height:660px;
+    }
+    .thumbnail{
+        margin-bottom:20px;
+    }
+}
+@media(max-width:992px){
+    .banner{
+        height:400px;
+    }
+    .thumbnail{
+        margin-bottom:20px;
+    }
+}

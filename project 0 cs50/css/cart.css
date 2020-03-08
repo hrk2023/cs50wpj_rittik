@@ -1,0 +1,36 @@
+body{
+    background:linear-gradient(to right,#8E0E00,#1F1C18);
+    width:100%;
+    height:100%;
+}
+.ul_decor{
+    list-style-type:none;
+}
+.li_decor{
+    padding-right:15px;
+}
+.theme{
+    color:white;
+}
+.btn-theme{
+    background: transparent;
+    border:1px solid white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color:white;
+    text-decoration:none;
+}
+.footer_dec{
+    background: black;
+    min-height:50px;
+    color:white;
+    margin-top:430px;
+}
+.foot-align{
+    width:50%;
+    margin:auto;
+}
