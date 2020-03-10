@@ -1,0 +1,31 @@
+body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    color:white;
+    background: linear-gradient(to right,#0F2027,#203A43,#2C5364);
+}
+.ul_decor{
+    list-style-type:none;
+}
+.li_decor{
+    padding-right:15px;
+}
+.back{
+    background-color: rgba(0,0,0,0.4);
+    border:1px solid rgba(0,0,0,0.6);
+}
+.btn-theme{
+    background: transparent;
+    border:1px solid white;
+}
+.footer_dec{
+    background: black;
+    min-height:50px;
+    color:white;    
+    margin-top:280px;
+}
+.foot-align{
+    width:50%;
+    margin:auto;
+}
