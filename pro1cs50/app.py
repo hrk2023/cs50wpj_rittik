@@ -1,12 +1,21 @@
-from flask import Flask, render_template,request
+from flask import Flask,request,render_template
+from flask_sqlalchemy import SQLAlchemy
+app=Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root@localhost/phpmyadmin/flask.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+db=SQLAlchemy(app)
 
+class USERS(db.Model):
+    id=db.Column(db.INTEGER, primary_key=True)
+    user=db.Column(db.String,unique=True)
 
-app = Flask(__name__)
+    def __init__(self,id,user):
+        self.id=id
+        self.user=user
 
-
-@app.route('/index.html')
+@app.route('/')
 def index():
-    return render_template("project 1 cs50/html/index.html")
+    return render_template("index.html")
 @app.route('/login.html')
 def login():
     return render_template("project 1 cs50/html/login.html")
@@ -20,7 +29,8 @@ def settings():
 def validate():
     if request.form=='POST':
         usr=request.form['username']
-        return render_template('project 1 cs50/html/home.html', uname=usr)
+        db.session.add(USERS(user=usr))
+        db.commit()
     else:
         return render_template('project 1 cs50/html/index.html')
 
